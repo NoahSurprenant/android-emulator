@@ -1,6 +1,4 @@
 FROM openjdk:18-jdk-slim
-ARG RESOURCE_REAPER_SESSION_ID="00000000-0000-0000-0000-000000000000"
-LABEL "org.testcontainers.resource-reaper-session"=$RESOURCE_REAPER_SESSION_ID
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -24,7 +22,7 @@ RUN git clone https://github.com/novnc/noVNC.git /usr/share/novnc && \
 
 
 # Docker labels.
-LABEL maintainer "Halim Qarroum <hqm.post@gmail.com>"
+LABEL maintainer "Noah Surprenant <noah.surprenant@gmail.com>"
 LABEL description "A Docker image allowing to run an Android emulator"
 LABEL version "1.0.0"
 

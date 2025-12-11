@@ -1,3 +1,5 @@
+The original repo is located at https://github.com/HQarroum/docker-android
+
 <br /><br /><br />
 <p align="center">
   <img width="400" src="assets/icon.png" />
