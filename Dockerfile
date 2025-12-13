@@ -1,4 +1,4 @@
-FROM openjdk:18-jdk-slim
+FROM eclipse-temurin:17-jdk
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -62,6 +62,7 @@ WORKDIR /opt
 # Exposing the Android emulator console port
 # and the ADB port.
 EXPOSE 5554 5555
+EXPOSE 5900 6080
 
 # Initializing the required directories.
 RUN mkdir /root/.android/ && \
@@ -69,7 +70,7 @@ RUN mkdir /root/.android/ && \
 	mkdir /data
 
 # Exporting ADB keys.
-COPY keys/* /root/.android/
+#COPY keys/* /root/.android/
 
 # The following layers will download the Android command-line tools
 # to install the Android SDK, emulator and system images.
