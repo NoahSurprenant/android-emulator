@@ -15,7 +15,7 @@ jobs:
           { name: 'google_apis_playstore', suffix: '-playstore' }
         ]
         gpu: [
-          #{ file: 'Dockerfile', suffix: '' },
+          { file: 'Dockerfile', suffix: '' },
           { file: 'Dockerfile.gpu', suffix: '-cuda' }
         ]
     runs-on: ubuntu-latest
@@ -48,7 +48,7 @@ jobs:
     strategy:
       matrix:
         gpu: [
-          #{ file: 'Dockerfile', suffix: '' },
+          { file: 'Dockerfile', suffix: '' },
           { file: 'Dockerfile.gpu', suffix: '-cuda' }
         ]
     runs-on: ubuntu-latest
